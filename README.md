@@ -1,5 +1,8 @@
 New SelfBot
 
+Get token from Alphat
+https://github.com/oscwib/wibjs
+
 >>Require to install<<
 
 =>>pip2 Install rsa
@@ -24,4 +27,4 @@ New SelfBot
 
 =>>pip2 install pyowm
 
-=>>Editing by Muhammad Fahmi Ridhani<<=
+=>>Editing by WIB<<=

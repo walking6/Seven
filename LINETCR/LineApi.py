@@ -41,12 +41,12 @@ class LINE:
       raise Exception("invalid arguments")
 
     self.authToken = self.Talk.authToken
-    self._headers = {'X-Line-Application': 'CHROMEOS\t1.7.14\tChrome_OS\t1', 'X-Line-Access': self.authToken, 'User-Agent': 'Line/1.7.14'}
+    self._headers = {'X-Line-Application': 'IOSIPAD\t7.14.0\tPhone OS\t10.12.0', 'X-Line-Access': self.authToken, 'User-Agent': 'Line/7.14.0 iPAD5,1 10.2.0'}
     self.cert = self.Talk.cert
     self._headers = {
-              'X-Line-Application': 'CHROMEOS\t1.7.14\tChrome_OS\t1', 
+              'X-Line-Application': 'IOSIPAD\t7.14.0\tPhone OS\t10.12.0', 
               'X-Line-Access': self.authToken, 
-              'User-Agent': 'Line/1.7.14'
+              'User-Agent': 'Line/7.14.0 iPAD5,1 10.2.0'
    }
     self.Poll = Poll(self.authToken)
     #self.channel = channel.Channel(self.authToken)
@@ -520,8 +520,8 @@ class LINE:
 
       prof = self.getProfile()
 
-      print("=============[SHINIGAMI FOR BOT]==============")
-      print("====[ Editing for Muhammad Fahmi Ridhani ]====")
+      print("=============[WIB BOT]==============")
+      print("==========[ Editing  By Oswib ]=========")
       print("==============================================")
       print("MID : " + prof.mid)
       print("NAME : " + prof.displayName)

@@ -79,10 +79,6 @@ helpMessage= """ ╔═══════════════════
 ╠ 回 Command For Owner 回
 ╠ 回Help4 (Setting Bot)回
 ╠ 回Help5 (Broadcast Commands)回
-╠ 
-╠ Creator by : Muhammad Fahmi Ridhani
-╠ Link : http://line.me/ti/p/~fahmi_077
-╠ 
 ╚═══════════════════
 """
 
@@ -217,7 +213,7 @@ wait = {
     'autoAdd':True,
     'message':"Thanks for add Me",
     "lang":"JP",
-    "comment":"AutoLike by Joker-тєαм",
+    "comment":"AutoLike by мorтαl",
     "welmsg":" welcome to group ",
     "commentOn":True,
     "commentBlack":{},
@@ -1448,7 +1444,7 @@ def bot(op):
             elif msg.text.lower() == "crash":
               if msg.from_ in admin:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': "ud7a8fbcc2af037c2c5bf181b89fda5f7"}
+                msg.contentMetadata = {'mid': ""}
                 cl.sendMessage(msg)
 #-----------------=============================   
             elif msg.text in ["Me"]:
@@ -3446,7 +3442,7 @@ def bot(op):
                             kt.sendText(msg.to,"Gagagl!")
                             print e
 #=================================================
-            elif msg.text == "Lurking":
+            elif msg.text == "Cctv":
                     cl.sendText(msg.to, "Set point.")
                     try:
                         del wait2['readPoint'][msg.to]
@@ -3459,7 +3455,7 @@ def bot(op):
                     wait2['setTime'][msg.to] = datetime.now().strftime('%Y-%m-%d %H:%M')
                     wait2['ROM'][msg.to] = {}
                     print wait2
-            elif msg.text == "Lurking result":
+            elif msg.text == "Borgoll":
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
                             chiya = ""
@@ -3468,7 +3464,7 @@ def bot(op):
                             for rom in wait2["ROM"][msg.to].items():
                                 print rom
                                 chiya += rom[1] + "\n"
-                        cl.sendText(msg.to, "╔═══════════════%s\n╠════════════════\n%s╠═══════════════\n║Readig point creation:\n║ [%s]\n╚════════════════"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
+                        cl.sendText(msg.to, "╔═══════════════%s\n╠════════════════\n%s╠═══════════════\n║Reading point creation:\n║ [%s]\n╚════════════════"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
                     else:
                         cl.sendText(msg.to, "anda slah ketik-_-")
 						
@@ -3961,7 +3957,7 @@ def bot(op):
                         pass
                     if len(dataResult) > 0:
                         grp = '\n• '.join(str(f) for f in dataResult)
-                        total = '\nThese %iuesrs have seen at the lastseen\npoint(｀・ω・´)\n\n%s' % (len(dataResult), datetime.now().strftime('%H:%M:%S') )
+                        total = '\nThese %users have seen at the lastseen\npoint(｀・ω・´)\n\n%s' % (len(dataResult), datetime.now().strftime('%H:%M:%S') )
                         cl.sendText(msg.to, "• %s %s" % (grp, total))
                     else:
                         cl.sendText(msg.to, "Sider ga bisa di read cek setpoint dulu ketik\nSetlastpoint\nkalo mau liat sider ketik\nViewlastseen")
@@ -4025,7 +4021,7 @@ def bot(op):
                                 wait["blacklist"][target] = True
                                 f=codecs.open('st2__b.json','w','utf-8')
                                 json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                                cl.sendText(msg.to,"Success Masuk daftar orang bejat Boss")
+                                cl.sendText(msg.to,"Success Masuk daftar orang black Boss")
                             except:
                                 cl.sendText(msg.to,"Error")
             elif "Unban @" in msg.text:
@@ -4047,7 +4043,7 @@ def bot(op):
                                 del wait["blacklist"][target]
                                 f=codecs.open('st2__b.json','w','utf-8')
                                 json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                                cl.sendText(msg.to,"Sudah di keluarkan dari daftar bejat Boss")
+                                cl.sendText(msg.to,"Sudah di keluarkan dari daftar black Boss")
                             except:
                                 cl.sendText(msg.to,"There was no blacklist user")
             elif msg.text in ["Clear banlist"]:
